@@ -1,7 +1,5 @@
 <?php
 
-
-
 $server = "de1tmi3t63foh7fa.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 $user = "gy3exai7wk7e9sg0";
 $password = "llo3oub1rpdp2rqe";
@@ -44,6 +42,7 @@ if(isset($_GET['alt']))
 </head>
 <body>
 	<form method="GET" action="crud.php">
+		<a href="index.php">Voltar</a>
 		<div class="container">
 		<table>
 				<h3>Cadastro de pessoas</h3>
@@ -117,6 +116,7 @@ if(isset($_GET['alt']))
 		
 		</select>
 		</table>
+
 		<br/>
 		<br/>
 
@@ -177,11 +177,16 @@ if(isset($_GET['alt']))
 			?>			
 
 		</table>
+
 	</div>
+
 	</form>
 
 </body>
 </html>
+
+
+
 
 
 
