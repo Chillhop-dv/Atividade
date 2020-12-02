@@ -41,7 +41,7 @@ if(isset($_GET['alt']))
 	<link rel="stylesheet" type="text/css" href="StyleSheet.css">
 </head>
 <body>
-	<form method="GET" action="crud.php">
+	<form method="POST" action="CRUD.php">
 		<a href="index.php">Voltar</a>
 		<div class="container">
 		<table>
@@ -105,7 +105,7 @@ if(isset($_GET['alt']))
 <tr>
 		<td>
 			<br>
-		<?php if (!empty($_GET['alt'])): ?>			
+		<?php if (!empty($_POST['alt'])): ?>			
 			<input type="submit" value="Salvar" name="btnUpdate">
 		<?php else:	?>
 			<input type="submit" value="Salvar" name="btnSalvar">
