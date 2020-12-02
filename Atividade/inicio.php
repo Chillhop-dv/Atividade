@@ -189,6 +189,3 @@ if(isset($_GET['alt']))
 
 
 
-
-
-
