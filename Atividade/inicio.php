@@ -105,7 +105,7 @@ if(isset($_GET['alt']))
 <tr>
 		<td>
 			<br>
-		<?php if (!empty($_POST['alt'])): ?>			
+		<?php if (!empty($_GET['alt'])): ?>			
 			<input type="submit" value="Salvar" name="btnUpdate">
 		<?php else:	?>
 			<input type="submit" value="Salvar" name="btnSalvar">
