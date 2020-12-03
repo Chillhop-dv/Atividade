@@ -27,7 +27,7 @@ if(!empty($_POST['btnSalvar']))
 
 if(!empty($_GET['btnUpdate']))
 	$result = $conexao -> query("UPDATE Alunos set Nome ='".$_GET['nome']."', 
-												   Idade = ".$_POST['idade'].", 
+												   Idade = '".$_POST['idade']."', 
 												   Sexo = '".$_POST['selectSexo']."', 
 												   cidade = '".$_POST['cidade']."',
 												   curso = '".$_POST['curso']."'  
@@ -46,5 +46,4 @@ if(!empty($_GET['del'])) // se não for vazio
 
 $conexao->close();
 
-?>		
-
+?>
