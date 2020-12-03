@@ -16,7 +16,7 @@ $result = $conexao -> query("SELECT * FROM alunos");
 
 if(isset($_GET['alt']))
 {
-	$resultAlt = $conexao -> query("SELECT * FROM alunos where AlunosID = ".$_POST['alt'] );
+	$resultAlt = $conexao -> query("SELECT * FROM alunos where AlunosID = ".$_GET['alt'] );
 
 	foreach ($resultAlt as $row) 
 	{
@@ -169,7 +169,7 @@ if(isset($_GET['alt']))
 							<a href="inicio.php?alt=<?php echo $row["AlunosID"] ?>">Alterar</a>
 						</td>
 						<td>
-							<a href="CRUD.php?del=<?php echo $row["AlunosID"] ?>">Excluir</a>
+							<a href="crud.php?del=<?php echo $row["AlunosID"] ?>">Excluir</a>
 						</td>
 					</tr>
 			<?php
@@ -184,7 +184,6 @@ if(isset($_GET['alt']))
 
 </body>
 </html>
-
 
 
 
