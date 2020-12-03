@@ -35,7 +35,7 @@ if(!empty($_post['btnUpdate']))
 
 // Deletar
 if(!empty($_POST['del'])) // se não for vazio	
-	$result = $conexao -> query("DELETE FROM alunos where AlunosID = ".$_GET['del']);
+	$result = $conexao -> query("DELETE FROM alunos where AlunosID = ".$_POST['del']);
 	
 
  if($result)
