@@ -169,7 +169,7 @@ if(isset($_GET['alt']))
 							<a href="inicio.php?alt=<?php echo $row["AlunosID"] ?>">Alterar</a>
 						</td>
 						<td>
-							<a href="crud.php?del=<?php echo $row["AlunosID"] ?>">Excluir</a>
+							<a href="CRUD.php?del=<?php echo $row["AlunosID"] ?>">Excluir</a>
 						</td>
 					</tr>
 			<?php
