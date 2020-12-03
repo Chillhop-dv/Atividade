@@ -16,7 +16,7 @@ $result = $conexao -> query("SELECT * FROM alunos");
 
 if(isset($_GET['alt']))
 {
-	$resultAlt = $conexao -> query("SELECT * FROM alunos where AlunosID = ".$_GET['alt'] );
+	$resultAlt = $conexao -> query("SELECT * FROM alunos where AlunosID = ".$_POST['alt'] );
 
 	foreach ($resultAlt as $row) 
 	{
