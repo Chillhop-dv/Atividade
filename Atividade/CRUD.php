@@ -27,11 +27,11 @@ if(!empty($_POST['btnSalvar']))
 
 if(!empty($_POST['btnUpdate']))
 	$result = $conexao -> query("UPDATE Alunos set Nome ='".$_POST['nome']."', 
-												   Idade = ".$_POST['idade'].", 
-												   Sexo = '".$_POST['selectSexo']."', 
-												   cidade = '".$_POST['cidade']."',
-												   curso = '".$_POST['curso']."'  
-												   where  AlunosID = ".$_POST['AlunosID']);
+												   Idade = ".$_GET['idade'].", 
+												   Sexo = '".$_GET['selectSexo']."', 
+												   cidade = '".$_GET['cidade']."',
+												   curso = '".$_GET['curso']."'  
+												   where  AlunosID = ".$_GET['AlunosID']);
 
 // Deletar
 if(!empty($_GET['del'])) // se não for vazio	
