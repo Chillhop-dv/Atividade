@@ -41,7 +41,7 @@ if(isset($_GET['alt']))
 	<link rel="stylesheet" type="text/css" href="StyleSheet.css">
 </head>
 <body>
-	<form method="POST" action="CRUD.php">
+	<form method="GET" action="CRUD.php">
 		<a href="index.php">Voltar</a>
 		<div class="container">
 		<table>
