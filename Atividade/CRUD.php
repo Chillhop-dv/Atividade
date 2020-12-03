@@ -26,7 +26,7 @@ if(!empty($_POST['btnSalvar']))
 // Update
 
 if(!empty($_GET['btnUpdate']))
-	$result = $conexao -> query("UPDATE Alunos set Nome ='".$_GET['nome']."', 
+	$result = $conexao -> query("UPDATE Alunos set Nome ='".$_POST['nome']."', 
 												   Idade = ".$_POST['idade'].", 
 												   Sexo = '".$_POST['selectSexo']."', 
 												   cidade = '".$_POST['cidade']."',
