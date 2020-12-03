@@ -25,7 +25,7 @@ if(!empty($_POST['btnSalvar']))
 
 // Update
 
-if(!empty($_post['btnUpdate']))
+if(!empty($_GET['btnUpdate']))
 	$result = $conexao -> query("UPDATE Alunos set Nome ='".$_GET['nome']."', 
 												   Idade = '".$_POST['idade']."', 
 												   Sexo = '".$_POST['selectSexo']."', 
@@ -34,7 +34,7 @@ if(!empty($_post['btnUpdate']))
 												   where  AlunosID = ".$_POST['AlunosID']);
 
 // Deletar
-if(!empty($_POST['del'])) // se não for vazio	
+if(!empty($_GET['del'])) // se não for vazio	
 	$result = $conexao -> query("DELETE FROM alunos where AlunosID = ".$_POST['del']);
 	
 
