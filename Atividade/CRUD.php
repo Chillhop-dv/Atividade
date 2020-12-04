@@ -4,7 +4,8 @@ $server = "de1tmi3t63foh7fa.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 $user = "gy3exai7wk7e9sg0";
 $password = "llo3oub1rpdp2rqe";
 $banco = "prvf4e1byhpdus1l";
-
+var_dump($_GET);
+var_dump($_POST);
 //criar uma conexão
 $conexao = new mysqli($server, $user, $password, $banco);
 
