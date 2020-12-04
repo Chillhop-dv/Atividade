@@ -39,10 +39,10 @@ if(!empty($_GET['del'])) // se não for vazio
 	$result = $conexao -> query("DELETE FROM alunos where AlunosID = ".$_GET['del']);
 	
 
- //if($result)
- //	header('Location: inicio.php');
- //else
- //	echo "Erro: ". $conexao -> error;
+ if($result)
+ 	header('Location: inicio.php');
+ else
+ 	echo "Erro: ". $conexao -> error;
 
 
 $conexao->close();
