@@ -33,6 +33,13 @@ if(isset($_GET['alt']))
 
 ?>
 
+$result = $conexao -> query("UPDATE alunos set Nome ='".$_GET['nome']."', 
+												   Idade = '".$_GET['idade']."', 
+												   Sexo = '".$_GET['selectSexo']."', 
+												   cidade = '".$_GET['cidade']."',
+												   curso = '".$_GET['curso']."'  
+												   where  AlunosID = ".$_GET['AlunosID']);
+
 
 <!DOCTYPE html>
 <html>
@@ -41,7 +48,7 @@ if(isset($_GET['alt']))
 	<link rel="stylesheet" type="text/css" href="StyleSheet.css">
 </head>
 <body>
-	<form method="POST" action="CRUD.php">
+	<form method="POST" <?php if(is_set($_GET['alt'])){echo "action=\"CRUD.php?nome=$NomeAlt&idade=$IdadeAlt&selectSexo=$SexoAlt&cidade=$CidAlt&curso=$CursoAlt&AlunosID=$AlunosIDAlt\"";}else{echo "action=\"CRUD.php\"";} ?>>
 		<a href="index.php">Voltar</a>
 		<div class="container">
 		<table>
