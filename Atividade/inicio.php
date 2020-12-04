@@ -27,7 +27,10 @@ if(isset($_GET['alt']))
 		$CidAlt = $row["Cidade"];
 		$CursoAlt = $row["Curso"];
 	}
+	$action = "action=\"CRUD.php?nome=$NomeAlt&idade=$IdadeAlt&selectSexo=$SexoAlt&cidade=$CidAlt&curso=$CursoAlt&AlunosID=$AlunosIDAlt\"";
 
+} else {
+	$action =  "action=\"CRUD.php\"";	
 }
 
 
@@ -40,7 +43,7 @@ if(isset($_GET['alt']))
 	<link rel="stylesheet" type="text/css" href="StyleSheet.css">
 </head>
 <body>
-	<form method="POST" <?php if(is_set($_GET['alt'])){echo "action=\"CRUD.php?nome=$NomeAlt&idade=$IdadeAlt&selectSexo=$SexoAlt&cidade=$CidAlt&curso=$CursoAlt&AlunosID=$AlunosIDAlt\"";}else{echo "action=\"CRUD.php\"";} ?>>
+	<form method="POST" <?=$action?>>
 		<a href="index.php">Voltar</a>
 		<div class="container">
 		<table>
