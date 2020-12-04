@@ -28,9 +28,11 @@ if(isset($_GET['alt']))
 		$CursoAlt = $row["Curso"];
 	}
 	$action = "action=\"CRUD.php?nome=$NomeAlt&idade=$IdadeAlt&selectSexo=$SexoAlt&cidade=$CidAlt&curso=$CursoAlt&AlunosID=$AlunosIDAlt\"";
+	$method = "GET";
 
 } else {
-	$action =  "action=\"CRUD.php\"";	
+	$action =  "action=\"CRUD.php\"";
+	$method = "POST";
 }
 
 
@@ -43,7 +45,7 @@ if(isset($_GET['alt']))
 	<link rel="stylesheet" type="text/css" href="StyleSheet.css">
 </head>
 <body>
-	<form method="POST" <?=$action?>>
+	<form method="<?=$method?>" <?=$action?>>
 		<a href="index.php">Voltar</a>
 		<div class="container">
 		<table>
