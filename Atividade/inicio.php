@@ -27,7 +27,7 @@ if(isset($_GET['alt']))
 		$CidAlt = $row["Cidade"];
 		$CursoAlt = $row["Curso"];
 	}
-	$action = "action=\"CRUD.php?nome=$NomeAlt&idade=$IdadeAlt&selectSexo=$SexoAlt&cidade=$CidAlt&curso=$CursoAlt&AlunosID=$AlunosIDAlt\"";
+	$action = "action=\"CRUD.php?btnUpdate=Salvar&nome=$NomeAlt&idade=$IdadeAlt&selectSexo=$SexoAlt&cidade=$CidAlt&curso=$CursoAlt&AlunosID=$AlunosIDAlt\"";
 	$method = "GET";
 
 } else {
