@@ -33,14 +33,6 @@ if(isset($_GET['alt']))
 
 ?>
 
-$result = $conexao -> query("UPDATE alunos set Nome ='".$_GET['nome']."', 
-												   Idade = '".$_GET['idade']."', 
-												   Sexo = '".$_GET['selectSexo']."', 
-												   cidade = '".$_GET['cidade']."',
-												   curso = '".$_GET['curso']."'  
-												   where  AlunosID = ".$_GET['AlunosID']);
-
-
 <!DOCTYPE html>
 <html>
 <head>
